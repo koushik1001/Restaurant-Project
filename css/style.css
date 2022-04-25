@@ -1,0 +1,2322 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.main_div {
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    top: 0;
+    bottom: 0;
+
+}
+
+.center_div h2 {
+    font-size: 22px;
+    color: rgb(68, 65, 65);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: 2px;
+}
+
+.center_div {
+
+    position: relative;
+}
+
+.rot {
+
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    position: relative;
+    border-right: 6px solid #4dbb5f;
+    border-left: 6px solid #4dbb5f;
+    animation: rot 2s linear infinite;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/*****************project-header part start*****************/
+.project-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    z-index: 3;
+    transition: all 0.5s;
+}
+
+.project-header .navbar-light .navbar-nav .nav-link.active:not(.nav-menu) {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.project-header .navbar-light .navbar-nav .nav-menu {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4dbb5f;
+}
+
+.project-header .navbar-light .navbar-nav .nav-link.active:hover {
+    color: #4dbb5f;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: #fff;
+}
+
+/*****************project-header part end*****************/
+
+/*****************banner section start*****************/
+.banner .carousel-item::before {
+    content: "";
+    background: rgba(50, 50, 50, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner .carousel-caption {
+    top: 32%;
+    bottom: 0;
+}
+
+.banner .carousel-caption h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 75px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.banner .carousel-caption h1::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 80px;
+    height: 3px;
+    display: inline-block;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.banner .carousel-caption p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    padding-top: 24px;
+}
+
+.banner .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 1;
+    margin: 8px;
+}
+
+.banner .carousel-indicators .active {
+    background-color: #4dbb5f;
+}
+
+/*****************banner section end*****************/
+
+/*****************about section start*****************/
+.about {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+
+.about-box .about-box-image {
+    width: 100%;
+}
+
+.about-box {
+    padding: 0 41px;
+}
+
+.about-box h2 {
+    color: rgba(21, 21, 21, 1);
+    font-size: 45px;
+    font-family: 'PT Serif', serif;
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+
+.about-box p {
+    color: rgba(21, 21, 21, 0.7);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'PT Serif', serif;
+    padding-bottom: 24px;
+}
+
+/*****************about section end*****************/
+
+/*****************offers section start*****************/
+.offers {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.offers h2 {
+    color: rgba(21, 21, 21, 1);
+    font-size: 45px;
+    font-family: 'PT Serif', serif;
+    padding-bottom: 34px;
+}
+
+.offers p {
+    color: rgba(21, 21, 21, 0.7);
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 16% 7%;
+}
+
+.offers-box {
+    position: relative;
+}
+
+.offers-box .offers-box-image {
+    width: 100%;
+}
+
+.offers-info {
+    padding-top: 10px;
+}
+
+.offers-info h4 {
+    color: rgba(21, 21, 21, 1);
+    font-size: 28px;
+    font-family: 'PT Serif', serif;
+    padding-bottom: 18px;
+}
+
+.offers-info h6 {
+    color: #4dbb5f;
+    font-size: 18px;
+}
+
+.offers-box-button {
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+}
+
+.offers-button {
+    background-color: #4dbb5f;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 13px 22px;
+    transition: all .5s;
+    opacity: 0;
+}
+
+.offers-button:hover {
+    color: #fff;
+    background-color: #323232;
+}
+
+.offers-box:hover .offers-button {
+    opacity: 1;
+}
+
+/*****************offers section end*****************/
+
+/*****************menu section start*****************/
+.menu {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+
+.menu h2 {
+    color: rgba(21, 21, 21, 1);
+    font-size: 45px;
+    font-family: 'PT Serif', serif;
+    padding-bottom: 34px;
+}
+
+.menu-box {
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-bottom: 65px;
+}
+
+.menu-heading {
+    background-color: #323232;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 40px 0;
+}
+
+.menu-heading li {
+    display: inline-block;
+    padding: 0 29px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.menu-heading li a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.menu-heading .active {
+    color: #fff;
+}
+
+.menu-heading-mains:hover {
+    color: #fff;
+}
+
+.menu-heading li a:not(.menu-heading-mains):hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.menu-content-main:not(#menuContent1) {
+    display: none;
+}
+.menu-content {
+    padding: 0 24%;
+}
+
+.menu-price {
+    color: #4dbb5f;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+.menu-name a {
+    color: rgba(21, 21, 21, 1);
+    font-size: 26px;
+    font-family: 'PT Serif', serif;
+    transition: all 0.5s;
+}
+
+.menu-name {
+    padding-top: 20px;
+}
+
+.menu-name a:hover {
+    color: #4dbb5f;
+}
+
+.menu-info {
+    color: rgba(21, 21, 21, 0.7);
+    font-size: 15px;
+    font-family: 'PT Serif', serif;
+    padding-top: 20px;
+}
+
+/*****************menu section end*****************/
+
+/*****************gallery section start*****************/
+.gallery {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.gallery-box1 .gallery-image1 {
+    width: 100%;
+}
+
+.gallery-box2 .gallery-image2 {
+    width: 100%;
+}
+
+.gallery-image1 {
+    transition: all 2s;
+}
+
+.gallery-image1:hover {
+    transform: scale(1.2);
+}
+
+.gallery-box2 {
+    overflow: hidden;
+}
+
+.gallery-image2 {
+    transition: all 2s;
+}
+
+.gallery-image2:hover {
+    transform: scale(1.2);
+}
+
+.gallery-box1 {
+    overflow: hidden;
+}
+
+/*****************gallery section end*****************/
+
+/*****************food section start*****************/
+.food {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+
+.food-info {
+    padding-top: 30px;
+}
+
+.food-info h4 {
+    color: rgba(21, 21, 21, 1);
+    font-size: 26px;
+    font-family: 'PT Serif', serif;
+}
+
+.food-info p {
+    color: rgba(21, 21, 21, 0.7);
+    font-size: 14px;
+    padding: 18px 11px;
+    line-height: 24px;
+}
+
+/*****************food section end*****************/
+
+
+/*****************footer part start*****************/
+.footer {
+    background-color: #323232;
+    padding: 100px 0;
+}
+
+.footer-menu {
+    display: inline-block;
+    padding-top: 50px;
+}
+
+.footer-menu li {
+    padding: 0 15px;
+    border-right: 2px solid #fff;
+}
+
+.footer-menu li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.footer-menu li a:hover {
+    color: #4dbb5f;
+}
+
+.footer-icon {
+    display: inline-block;
+    padding-top: 50px;
+}
+
+.footer-icon li {
+    padding: 0 12px;
+}
+
+.footer-icon li a {
+    color: #fff;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: all 0.4s;
+}
+
+.facebook {
+    padding: 7px 15px;
+}
+
+.instagram {
+    padding: 7px 12px;
+}
+
+.twitter {
+    padding: 7px 12px;
+}
+
+.youtube {
+    padding: 7px 11px;
+}
+
+.pinterest {
+    padding: 7px 13px;
+}
+
+.footer-icon li a:hover {
+    background-color: #4dbb5f;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 60px;
+}
+
+/*****************footer part end*****************/
+
+/*****************banner-about section start*****************/
+.banner-about {
+    background: url(../images/banner_about-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 210px 0;
+    position: relative;
+}
+
+.banner-about::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner-about h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+}
+
+/*****************banner-about section end*****************/
+
+/*****************restaurant section start*****************/
+.restaurant {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+
+.restaurant-box .restaurant-box-image {
+    width: 100%;
+}
+
+.restaurant-box {
+    padding: 0 30px;
+}
+
+.restaurant-box h2 {
+    color: rgba(21, 21, 21, 1);
+    font-size: 45px;
+    font-family: 'PT Serif', serif;
+    font-weight: 600;
+    padding-bottom: 24px;
+}
+
+.restaurant-box h5 {
+    color: rgba(21, 21, 21, 0.7);
+    font-size: 26px;
+    line-height: 33px;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    padding-left: 64px;
+    padding-bottom: 24px;
+    position: relative;
+}
+
+.restaurant-box h5::after {
+    position: absolute;
+    background-color: #41a451;
+    width: 50px;
+    height: 2px;
+    top: 18px;
+    left: 0;
+    content: "";
+}
+
+.restaurant-box p {
+    color: rgba(21, 21, 21, 0.7);
+    font-size: 15px;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+
+/*****************restaurant section end*****************/
+
+/*****************service section start*****************/
+.service {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.service h2 {
+    color: rgba(21, 21, 21, 1);
+    font-size: 45px;
+    font-family: 'PT Serif', serif;
+    font-weight: 600;
+    padding-bottom: 65px;
+}
+
+.service-box {
+    display: flex;
+}
+
+.service-info {
+    padding-left: 20px;
+}
+
+.service-info h5 {
+    font-size: 26px;
+    color: rgba(21, 21, 21, 1);
+    font-family: 'PT Serif', serif;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.service-info p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    color: rgba(21, 21, 21, 0.8);
+}
+
+.service-image {
+    padding: 9px 0;
+}
+
+/*****************service section end*****************/
+
+/*****************awards section start*****************/
+.awards {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+
+.awards h2 {
+    color: rgba(21, 21, 21, 1);
+    font-size: 45px;
+    font-family: 'PT Serif', serif;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.awards-box .awards-image {
+    width: 100%;
+}
+
+.awards-image {
+    transition: all 0.8s;
+}
+
+.awards-image:hover {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(21, 21, 21, 0.5);
+}
+
+/*****************awards section end*****************/
+
+/*****************banner-gallery section start*****************/
+.banner-gallery {
+    background: url(../images/banner-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 210px 0;
+    position: relative;
+}
+
+.banner-gallery::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner-gallery h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+}
+
+/*****************banner-gallery section end*****************/
+
+/*****************images-area section start*****************/
+.images-area {
+    background-color: #fff;
+    padding: 150px 0;
+}
+
+.images-area-box .images-area-image {
+    width: 100%;
+}
+
+/*****************images-area section end*****************/
+
+/*****************banner-menu section start*****************/
+.banner-menu {
+    background-image: url(../images/menu-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 210px 0;
+    position: relative;
+}
+
+.banner-menu::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.58);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner-menu h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+}
+
+/*****************banner-menu section end*****************/
+
+/*****************dishes section start*****************/
+.dishes {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+
+.dishes-mains {
+    background-color: #fff;
+}
+
+.dishes-mains-list {
+    background-color: #323232;
+    padding: 45px 0;
+}
+
+.dishes-mains-list li {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+.dishes-mains-list li a {
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.5s;
+}
+
+.dishes-mains-list .active {
+    color: #fff;
+}
+
+.dishes-box-list:not(#dishesContent1) {
+    display: none;
+}
+
+.dishes-mains-list li a {
+    cursor: pointer;
+}
+
+.dishes-mains-list li a:hover {
+    color: #fff;
+}
+
+.dishes-list {
+    display: flex;
+    padding: 4% 3%;
+    border-bottom: 4px solid #f5f5f5;
+}
+
+.dishes-info {
+    padding-left: 25px;
+}
+
+.dishes-info h6 {
+    color: #4dbb5f;
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.dishes-info h5 a {
+    color: rgba(21, 21, 21, 1);
+    font-size: 30px;
+    font-family: 'PT Serif', serif;
+    transition: all 0.5s;
+}
+
+.dishes-info h5 a:hover {
+    color: #4dbb5f;
+    ;
+}
+
+.dishes-info h5 {
+    padding-bottom: 20px;
+}
+
+.dishes-info p {
+    color: rgba(21, 21, 21, 0.5);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    padding-right: 10px;
+}
+
+.dishes-image {
+    padding: 15px 0;
+}
+
+/*****************dishes section end*****************/
+
+/*****************banner-contact section start*****************/
+.banner-contact {
+    background: url(../images/contact-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 210px 0;
+    position: relative;
+}
+
+.banner-contact::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner-contact h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+}
+
+/*****************banner-contact section end*****************/
+
+/*****************location section start*****************/
+.location {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.location-info {
+    padding-top: 30px;
+}
+
+.location-info h4 a {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 500;
+    color: rgba(21, 21, 21, 1);
+    font-family: 'PT Serif', serif;
+}
+
+.location-info p {
+    color: rgba(21, 21, 21, 0.6);
+    font-family: 'PT Serif', serif;
+    padding-top: 10px;
+}
+
+/*****************location section end*****************/
+
+/*****************contact-form section start*****************/
+.contact-form {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+
+.contact-form h2 {
+    color: rgba(21, 21, 21, 1);
+    font-size: 45px;
+    font-family: 'PT Serif', serif;
+    font-weight: 600;
+    padding-bottom: 45px;
+}
+
+.contact-form form {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.contact-form .form-control {
+    padding: 18px 20px;
+    font-weight: 300;
+    line-height: 27px;
+    color: rgba(21, 21, 21, 1);
+    border: 1px solid rgba(21, 21, 21, 0.28);
+}
+
+.contact-button {
+    color: #fff;
+    background-color: #4dbb5f;
+    font-weight: 500;
+    padding: 12px 70px;
+    transition: all 0.5s;
+}
+
+.contact-button:hover {
+    color: #fff;
+    background: rgba(21, 21, 21, 0.7);
+}
+
+.contact-form .form-control:focus {
+    color: #212529;
+    background-color: rgba(77, 187, 95, 0.1);
+    border-color: #4dbb5f;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(245 245 245);
+}
+
+/*****************contact-form section end*****************/
+
+@media only screen and (max-width: 1199px) {
+
+    .project-header .navbar-light .navbar-nav .nav-link.active:not(.nav-menu),
+    .project-header .navbar-light .navbar-nav .nav-menu {
+        font-size: 17px;
+    }
+
+    .header-logo {
+        width: 85%;
+    }
+
+    .banner .carousel-indicators [data-bs-target] {
+        width: 14px;
+        height: 14px;
+        margin: 7px;
+    }
+
+    .banner .carousel-caption h1 {
+        font-size: 70px;
+        padding-bottom: 15px;
+    }
+
+    .banner .carousel-caption p {
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 20px;
+    }
+
+    .about-box {
+        padding: 0 35px;
+    }
+
+    .about-box h2 {
+        font-size: 42px;
+        padding-top: 17px;
+        padding-bottom: 15px;
+    }
+
+    .about-box p {
+        font-size: 15px;
+        line-height: 22px;
+        padding-bottom: 15px;
+    }
+
+    .restaurant-box {
+        padding: 0 20px;
+    }
+
+    .restaurant-box h2 {
+        font-size: 39px;
+        padding-bottom: 15px;
+    }
+
+    .restaurant-box h5 {
+        font-size: 21px;
+        line-height: 27px;
+        padding-bottom: 18px;
+    }
+
+    .restaurant-box h5::after {
+        top: 14px;
+    }
+
+    .restaurant-box p {
+        font-size: 14px;
+        line-height: 21px;
+        padding-bottom: 15px;
+    }
+
+    .service h2 {
+        font-size: 42px;
+    }
+
+    .service-info h5 {
+        font-size: 22px;
+        padding-bottom: 7px;
+    }
+
+    .service-info p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .awards h2 {
+        font-size: 42px;
+    }
+
+    .dishes-mains-list li {
+        font-size: 23px;
+        padding: 0 30px;
+    }
+
+    .location-info h4 a {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .location-info p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .project-header .navbar-light .navbar-nav .nav-link.active:not(.nav-menu),
+    .project-header .navbar-light .navbar-nav .nav-menu {
+        font-size: 16px;
+    }
+
+    .banner .carousel-caption h1 {
+        font-size: 65px;
+        padding-bottom: 12px;
+    }
+
+    .banner .carousel-caption p {
+        font-size: 15px;
+        line-height: 21px;
+        padding-top: 15px;
+    }
+
+    .banner .carousel-caption h1::after {
+        width: 70px;
+    }
+
+
+
+    .banner .carousel-indicators [data-bs-target] {
+        width: 13px;
+        height: 13px;
+        margin: 6px;
+    }
+
+    .banner .carousel-caption {
+        top: 30%;
+    }
+
+    .banner-about,
+    .banner-gallery,
+    .banner-menu,
+    .banner-contact {
+        padding: 200px 0;
+    }
+
+    .location-info {
+        padding-top: 25px;
+    }
+
+    .location-info h4 a {
+        font-size: 23px;
+        line-height: 31px;
+    }
+
+    .location-info p {
+        font-size: 14px;
+        padding-top: 8px;
+    }
+
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    .header-logo {
+        width: 80%;
+    }
+
+    .navbar-toggler {
+        font-size: 17px;
+    }
+
+    .navbar-nav {
+        background: rgba(0, 0, 0, 0.65);
+        padding: 8px 0 8px 15px;
+    }
+
+    .project-header .navbar-light .navbar-nav .nav-link.active:not(.nav-menu),
+    .project-header .navbar-light .navbar-nav .nav-menu {
+        font-size: 15px;
+    }
+
+    .nav-link {
+        padding: .45rem 1rem;
+    }
+
+    .banner .carousel-caption h1 {
+        font-size: 60px;
+        padding-bottom: 10px;
+    }
+
+    .banner .carousel-caption p {
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 14px;
+    }
+
+    .about {
+        padding: 80px 0;
+    }
+
+    .about-box {
+        padding: 0 15px;
+    }
+
+    .about-box h2 {
+        font-size: 30px;
+        padding-top: 15px;
+        padding-bottom: 8px;
+    }
+
+    .about-box p {
+        font-size: 13px;
+        line-height: 19px;
+        padding-bottom: 8px;
+    }
+
+    .about-signature {
+        width: 32%;
+    }
+
+    .offers {
+        padding: 80px 0;
+    }
+
+    .offers h2 {
+        font-size: 40px;
+        padding-bottom: 25px;
+    }
+
+    .offers p {
+        font-size: 15px;
+        line-height: 21px;
+        padding: 0 12% 7%;
+    }
+
+    .offers-button {
+        font-size: 11px;
+        padding: 11px 19px;
+    }
+
+    .offers-box-button {
+        bottom: 32%;
+    }
+
+    .offers-info h4 {
+        font-size: 23px;
+        padding-bottom: 10px;
+    }
+
+    .offers-info h6 {
+        font-size: 16px;
+    }
+
+    .menu {
+        padding: 80px 0;
+    }
+
+    .menu h2 {
+        font-size: 40px;
+        padding-bottom: 25px;
+    }
+
+    .menu-heading li a {
+        font-size: 16px;
+    }
+
+    .menu-heading li {
+        padding: 0 20px;
+    }
+
+    .menu-heading {
+        padding: 25px 0;
+    }
+
+    .menu-price {
+        font-size: 17px;
+        padding-top: 42px;
+    }
+
+    .menu-name {
+        padding-top: 18px;
+    }
+
+    .menu-name a {
+        font-size: 25px;
+    }
+
+    .menu-info {
+        font-size: 14px;
+        padding-top: 18px;
+    }
+
+    .gallery {
+        padding: 80px 0;
+    }
+
+    .food {
+        padding: 80px 0;
+    }
+
+    .food-info {
+        padding-top: 18px;
+    }
+
+    .food-info h4 {
+        font-size: 24px;
+    }
+
+    .food-info p {
+        font-size: 12px;
+        padding: 12px 0px;
+        line-height: 19px;
+    }
+
+
+    .footer {
+        padding: 80px 0;
+    }
+
+    .banner-about,
+    .banner-gallery,
+    .banner-menu,
+    .banner-contact {
+        padding: 170px 0;
+    }
+
+    .banner-about h1,
+    .banner-gallery h1,
+    .banner-menu h1,
+    .banner-contact h1 {
+        font-size: 50px;
+    }
+
+    .restaurant-box {
+        padding: 0 8px;
+    }
+
+    .restaurant-box h2 {
+        font-size: 27px;
+        padding-bottom: 10px;
+    }
+
+    .restaurant-box h5 {
+        font-size: 14px;
+        line-height: 19px;
+        padding-bottom: 8px;
+        padding-left: 56px;
+    }
+
+    .restaurant-box h5::after {
+        width: 45px;
+        top: 10px;
+    }
+
+    .restaurant-box p {
+        font-size: 11px;
+        line-height: 17px;
+        padding-bottom: 6px;
+    }
+
+    .service h2 {
+        font-size: 35px;
+        padding-bottom: 50px;
+    }
+
+    .service-info {
+        padding-left: 18px;
+    }
+
+    .service-info h5 {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .service-info p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .awards h2 {
+        font-size: 35px;
+    }
+
+    .dishes-info h6 {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+
+    .dishes-info h5 a {
+        font-size: 26px;
+    }
+
+    .dishes-info p {
+        font-size: 15px;
+        line-height: 20px;
+        padding-right: 0px;
+    }
+
+    .location-box img {
+        width: 32%;
+    }
+
+    .location-info h4 a {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .location-info p {
+        font-size: 13px;
+        padding-top: 6px;
+    }
+
+    .contact-form h2 {
+        font-size: 38px;
+    }
+
+    .contact-form .form-control {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .contact-button {
+        padding: 8px 56px;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .project-header .navbar-light .navbar-nav .nav-link.active:not(.nav-menu),
+    .project-header .navbar-light .navbar-nav .nav-menu {
+        font-size: 14px;
+    }
+
+    .nav-link {
+        padding: .42rem 1rem;
+    }
+
+    .navbar-nav {
+        padding: 7px 0 7px 15px;
+    }
+
+    .banner .carousel-caption h1 {
+        font-size: 45px;
+        padding-bottom: 8px;
+    }
+
+    .banner .carousel-caption h1::after {
+        width: 50px;
+        height: 2px;
+    }
+
+    .banner .carousel-caption p {
+        font-size: 12px;
+        line-height: 18px;
+        padding-top: 10px;
+    }
+
+    .banner .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        margin: 4px;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 5px;
+    }
+
+    .food-info h4 {
+        font-size: 23px;
+    }
+
+    .food-info p {
+        font-size: 12px;
+        padding: 10px 0px;
+        line-height: 18px;
+    }
+
+    .footer-menu li a {
+        font-size: 15px;
+    }
+
+    .footer-icon li a {
+        font-size: 17px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .banner-about,
+    .banner-gallery,
+    .banner-menu,
+    .banner-contact {
+        padding: 140px 0;
+    }
+
+    .location-box img {
+        width: 30%;
+    }
+
+    .location-info h4 a {
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    .location-info p {
+        font-size: 12px;
+        padding-top: 4px;
+    }
+
+    .location-info {
+        padding-top: 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 35px;
+    }
+
+    .contact-form .form-control {
+        font-size: 13px;
+    }
+
+    .contact-form .form-control {
+        padding: 16px 20px;
+    }
+
+    .contact-button {
+        padding: 7px 50px;
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .navbar-toggler {
+        font-size: 16px;
+        padding: 0.25rem 0.65rem;
+    }
+
+    .nav-link {
+        padding: .38rem 1rem;
+    }
+
+    .navbar-nav {
+        padding: 6px 0 6px 14px;
+    }
+
+    .banner .carousel-caption h1 {
+        font-size: 38px;
+        padding-bottom: 7px;
+    }
+
+    .banner .carousel-caption p {
+        font-size: 10px;
+        line-height: 16px;
+        padding-top: 8px;
+    }
+
+    .banner .carousel-caption h1::after {
+        width: 40px;
+        height: 1px;
+    }
+
+    .banner .carousel-indicators [data-bs-target] {
+        width: 8px;
+        height: 8px;
+        margin: 3px;
+    }
+
+    .about-box h2 {
+        font-size: 35px;
+        padding-top: 45px;
+        padding-bottom: 15px;
+    }
+
+    .about-box p {
+        font-size: 15px;
+        line-height: 22px;
+        padding-bottom: 12px;
+    }
+
+    .about-signature {
+        width: 26%;
+    }
+
+    .offers p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 2% 7%;
+    }
+
+    .offers-box {
+        padding-bottom: 50px;
+    }
+
+    .offers-button {
+        font-size: 14px;
+        padding: 14px 30px;
+    }
+
+    .offers-info h4 {
+        font-size: 30px;
+        padding-bottom: 12px;
+    }
+
+    .offers-info h6 {
+        font-size: 20px;
+    }
+
+    .menu h2 {
+        padding-bottom: 40px;
+    }
+
+    .gallery-box1 {
+        margin-bottom: 25px;
+    }
+
+    .gallery-box2 {
+        margin-bottom: 25px;
+    }
+
+    .food-info {
+        padding-bottom: 30px;
+    }
+
+    .food-info h4 {
+        font-size: 25px;
+    }
+
+    .food-info p {
+        font-size: 13px;
+        padding: 10px 50px;
+        line-height: 19px;
+    }
+
+    .banner-about h1,
+    .banner-gallery h1,
+    .banner-menu h1,
+    .banner-contact h1 {
+        font-size: 44px;
+    }
+
+    .restaurant-box h2 {
+        font-size: 35px;
+        padding-bottom: 18px;
+        padding-top: 45px;
+    }
+
+    .restaurant-box h5 {
+        font-size: 18px;
+        line-height: 23px;
+        padding-bottom: 15px;
+        padding-left: 65px;
+    }
+
+    .restaurant-box h5::after {
+        width: 50px;
+        top: 12px;
+    }
+
+    .restaurant-box p {
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 14px;
+    }
+
+    .service h2 {
+        font-size: 40px;
+        padding-bottom: 60px;
+    }
+
+    .service-info h5 {
+        font-size: 25px;
+        padding-bottom: 12px;
+    }
+
+    .service-info p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .service-box {
+        padding: 35px 30px;
+    }
+
+    .awards h2 {
+        font-size: 40px;
+        padding-bottom: 70px;
+    }
+
+    .images-area {
+        padding: 100px 0;
+    }
+
+    .images-area-box {
+        margin-bottom: 30px;
+    }
+
+    .location-box img {
+        width: 20%;
+    }
+
+    .location-info h4 a {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .location-info p {
+        font-size: 15px;
+        padding-top: 13px;
+    }
+
+    .location-info {
+        padding-top: 28px;
+        padding-bottom: 80px;
+    }
+
+    .contact-form h2 {
+        font-size: 40px;
+    }
+
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .header-logo {
+        width: 75%;
+    }
+
+    .navbar-toggler {
+        font-size: 15px;
+    }
+
+    .project-header .navbar-light .navbar-nav .nav-link.active:not(.nav-menu),
+    .project-header .navbar-light .navbar-nav .nav-menu {
+        font-size: 13px;
+    }
+
+    .nav-link {
+        padding: .34rem 1rem;
+    }
+
+    .navbar-nav {
+        padding: 5px 0 5px 13px;
+    }
+
+    .banner .carousel-caption h1 {
+        font-size: 35px;
+        padding-bottom: 5px;
+    }
+
+    .banner .carousel-caption p {
+        font-size: 8px;
+        line-height: 12px;
+        padding-top: 6px;
+    }
+
+    .banner .carousel-indicators [data-bs-target] {
+        width: 6px;
+        height: 6px;
+        margin: 3px;
+    }
+
+    .about-box h2 {
+        font-size: 32px;
+        padding-top: 40px;
+        padding-bottom: 12px;
+    }
+
+    .about-box p {
+        font-size: 13px;
+        line-height: 19px;
+        padding-bottom: 10px;
+    }
+
+    .about-signature {
+        width: 20%;
+    }
+
+    .offers h2 {
+        font-size: 34px;
+        padding-bottom: 20px;
+    }
+
+    .offers p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .menu h2 {
+        font-size: 34px;
+    }
+
+    .banner-about,
+    .banner-gallery,
+    .banner-menu,
+    .banner-contact {
+        padding: 120px 0;
+    }
+
+    .dishes-mains-list {
+        padding: 30px 0;
+    }
+
+    .location-box img {
+        width: 18%;
+    }
+
+    .location-info h4 a {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .location-info p {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    .location-info {
+        padding-top: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+
+    .location-box img {
+        width: 16%;
+    }
+
+}
+
+@media only screen and (max-width: 481px) {
+
+    .project-header .navbar-light .navbar-nav .nav-link.active:not(.nav-menu),
+    .project-header .navbar-light .navbar-nav .nav-menu {
+        font-size: 12px;
+    }
+
+    .nav-link {
+        padding: .28rem 1rem;
+    }
+
+    .navbar-nav {
+        padding: 3px 0 3px 11px;
+    }
+
+    .banner .carousel-caption {
+        top: 25%;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0px;
+    }
+
+    .banner-about,
+    .banner-gallery,
+    .banner-menu,
+    .banner-contact {
+        padding: 110px 0;
+    }
+
+    .banner-about h1,
+    .banner-gallery h1,
+    .banner-menu h1,
+    .banner-contact h1 {
+        font-size: 42px;
+    }
+
+    .location-box img {
+        width: 15%;
+    }
+
+    .location-info h4 a {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .location-info p {
+        font-size: 13px;
+        padding-top: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .project-header {
+        padding: 5px 0;
+    }
+
+    .header-logo {
+        width: 65%;
+    }
+
+    .navbar-toggler {
+        font-size: 13px;
+        padding: 0.22rem 0.6rem;
+    }
+
+    .navbar-nav {
+        padding: 2px 0 2px 10px;
+    }
+
+    .nav-link {
+        padding: .25rem 1rem;
+    }
+
+    banner .carousel-caption p {
+        font-size: 7px;
+        line-height: 11px;
+        padding-top: 5px;
+    }
+
+    .banner .carousel-caption h1 {
+        font-size: 28px;
+    }
+
+    .banner .carousel-indicators [data-bs-target] {
+        width: 4px;
+        height: 4px;
+        margin: 2px;
+    }
+
+    .about-box h2 {
+        font-size: 25px;
+        padding-top: 25px;
+        padding-bottom: 8px;
+    }
+
+    .about-box p {
+        font-size: 11px;
+        line-height: 16px;
+        padding-bottom: 8px;
+    }
+
+    .offers h2 {
+        font-size: 27px;
+        padding-bottom: 13px;
+    }
+
+    .offers p {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .offers-button {
+        font-size: 10px;
+        padding: 12px 24px;
+    }
+
+    .offers-box-button {
+        bottom: 35%;
+    }
+
+    .offers-info h4 {
+        font-size: 20px;
+        padding-bottom: 6px;
+    }
+
+    .offers-info h6 {
+        font-size: 15px;
+    }
+
+    .menu h2 {
+        font-size: 27px;
+    }
+
+    .menu-heading li a {
+        font-size: 12px;
+    }
+
+    .menu-heading li {
+        padding: 0 13px;
+    }
+
+    .menu-heading {
+        padding: 18px 0;
+    }
+
+    .menu-price {
+        font-size: 12px;
+        padding-top: 30px;
+    }
+
+    .menu-name a {
+        font-size: 20px;
+    }
+
+    .menu-name {
+        padding-top: 5px;
+    }
+
+    .menu-info {
+        font-size: 11px;
+        line-height: 17px;
+        padding-top: 10px;
+    }
+
+    .food-info h4 {
+        font-size: 24px;
+    }
+
+    .food-info p {
+        font-size: 12px;
+        padding: 10px 0;
+        line-height: 17px;
+    }
+
+    .footer {
+        padding: 45px 0;
+    }
+
+    .footer-logo {
+        width: 24%;
+    }
+
+    .footer-menu {
+        padding-top: 28px;
+    }
+
+    .footer-menu li a {
+        font-size: 12px;
+    }
+
+    .footer-menu li {
+        padding: 0 8px;
+        border-right: none;
+    }
+
+    .footer-icon {
+        padding-top: 30px;
+    }
+
+    .footer-icon li {
+        padding: 0 4px;
+    }
+
+    .footer-icon li a {
+        font-size: 10px;
+    }
+
+    .facebook {
+        padding: 5px 10px;
+    }
+
+    .instagram {
+        padding: 5px 9px;
+    }
+
+    .twitter {
+        padding: 5px 9px;
+    }
+
+    .youtube {
+        padding: 5px 8px;
+    }
+
+    .pinterest {
+        padding: 5px 9px;
+    }
+
+    .footer p {
+        font-size: 10px;
+        padding-top: 38px;
+    }
+
+    .banner-about,
+    .banner-gallery,
+    .banner-menu,
+    .banner-contact {
+        padding: 100px 0;
+    }
+
+    .banner-about h1,
+    .banner-gallery h1,
+    .banner-menu h1,
+    .banner-contact h1 {
+        font-size: 40px;
+    }
+
+    .restaurant-box h2 {
+        font-size: 26px;
+        padding-bottom: 12px;
+        padding-top: 30px;
+    }
+
+    .restaurant-box h5::after {
+        width: 40px;
+        top: 11px;
+    }
+
+    .restaurant-box h5 {
+        font-size: 14px;
+        line-height: 19px;
+        padding-bottom: 13px;
+        padding-left: 50px;
+    }
+
+    .restaurant-box p {
+        font-size: 11px;
+        line-height: 17px;
+        padding-bottom: 10px;
+    }
+
+    .service h2 {
+        font-size: 31px;
+        padding-bottom: 40px;
+    }
+
+    .service-info h5 {
+        font-size: 22px;
+        padding-bottom: 12px;
+    }
+
+    .service-info p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .service-box {
+        padding: 20px 24px;
+    }
+
+    .awards h2 {
+        font-size: 25px;
+        padding-bottom: 50px;
+    }
+
+    .dishes-mains-list li {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    .dishes-mains-list {
+        padding: 20px 0;
+    }
+
+    .dishes-info h6 {
+        font-size: 15px;
+        padding-bottom: 6px;
+    }
+
+    .dishes-info h5 a {
+        font-size: 22px;
+    }
+
+    .dishes-info h5 {
+        padding-bottom: 15px;
+    }
+
+    .dishes-info p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .contact-form h2 {
+        font-size: 28px;
+    }
+
+    .contact-form .form-control {
+        font-size: 10px;
+    }
+
+    .contact-form .form-control {
+        padding: 10px 8px;
+    }
+
+    .contact-button {
+        padding: 3px 28px;
+        font-size: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .project-header {
+        padding: 2px 0;
+    }
+
+    .header-logo {
+        width: 62%;
+    }
+
+    .navbar-toggler {
+        font-size: 12px;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .project-header .navbar-light .navbar-nav .nav-link.active:not(.nav-menu),
+    .project-header .navbar-light .navbar-nav .nav-menu {
+        font-size: 11px;
+    }
+
+    .nav-link {
+        padding: .18rem 1rem;
+    }
+
+    .navbar-nav {
+        padding: 1px 0 1px 8px;
+    }
+
+    .banner .carousel-caption h1::after {
+        display: none;
+    }
+
+    .banner .carousel-caption p {
+        display: none;
+    }
+
+    .banner .carousel-caption {
+        top: 30%;
+    }
+
+    .about-box h2 {
+        font-size: 24px;
+    }
+
+    .offers h2 {
+        font-size: 25px;
+        padding-bottom: 12px;
+    }
+
+    .offers p {
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+    .menu h2 {
+        font-size: 25px;
+    }
+
+    .menu-price {
+        font-size: 11px;
+        padding-top: 25px;
+    }
+
+    .menu-name a {
+        font-size: 17px;
+    }
+
+    .menu-info {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .food-info h4 {
+        font-size: 23px;
+    }
+
+    .food-info p {
+        font-size: 11px;
+        line-height: 16px;
+        padding: 9px 0;
+    }
+
+    .footer-logo {
+        width: 32%;
+    }
+
+    .footer-menu li a {
+        font-size: 11px;
+    }
+
+    .footer-menu li {
+        padding: 0 6px;
+    }
+
+    .footer-icon li a {
+        font-size: 9px;
+    }
+
+    .facebook {
+        padding: 5px 9px;
+    }
+
+    .instagram {
+        padding: 5px 7px;
+    }
+
+    .twitter {
+        padding: 5px 7px;
+    }
+
+    .youtube {
+        padding: 5px 6px;
+    }
+
+    .pinterest {
+        padding: 5px 8px;
+    }
+
+    .footer-icon {
+        padding-top: 25px;
+    }
+
+    .footer-icon li {
+        padding: 0 3px;
+    }
+
+    .footer p {
+        font-size: 9px;
+        padding-top: 35px;
+    }
+
+    .banner-about,
+    .banner-gallery,
+    .banner-menu,
+    .banner-contact {
+        padding: 70px 0;
+    }
+
+    .banner-about h1,
+    .banner-gallery h1,
+    .banner-menu h1,
+    .banner-contact h1 {
+        font-size: 30px;
+    }
+
+    .restaurant-box h5::after {
+        width: 35px;
+        top: 9px;
+    }
+
+    .restaurant-box h5 {
+        padding-left: 45px;
+    }
+
+    .service h2 {
+        font-size: 26px;
+        padding-bottom: 28px;
+    }
+
+    .service-info h5 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .service-info p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .dishes-mains-list li {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .dishes-info h6 {
+        font-size: 12px;
+    }
+
+    .dishes-info h5 a {
+        font-size: 20px;
+    }
+
+    .location-box img {
+        width: 20%;
+    }
+
+    .location-info h4 a {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .location-info p {
+        font-size: 12px;
+        padding-top: 6px;
+    }
+
+    .contact-form h2 {
+        font-size: 25px;
+        padding-bottom: 28px;
+    }
+
+}
